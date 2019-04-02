@@ -1,9 +1,14 @@
 package ie.tudublin;
 
 import processing.core.PApplet;
+import processing.core.PImage;
+
 
 public class UI extends PApplet
 {
+    PImage img;
+    BarLoad loading;
+
     public void settings()
     {
         size(1000,800);
@@ -11,6 +16,11 @@ public class UI extends PApplet
 
     public void setup()
     {
-        
+        loading = new BarLoad(this);
+    }
+
+    public void draw()
+    {
+        background(255);
     }
 }
