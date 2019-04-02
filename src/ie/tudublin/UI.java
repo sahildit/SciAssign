@@ -17,10 +17,18 @@ public class UI extends PApplet
     public void setup()
     {
         loading = new BarLoad(this);
+        
     }
 
     public void draw()
     {
         background(255);
+        int k = loadbar(counter);
+        counter++;
+    }
+
+    public int loadbar()
+    {
+        
     }
 }
