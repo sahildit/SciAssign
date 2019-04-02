@@ -6,6 +6,7 @@ import processing.core.PImage;
 
 public class UI extends PApplet
 {
+    int counter;
     PImage img;
     BarLoad loading;
 
@@ -23,12 +24,17 @@ public class UI extends PApplet
     public void draw()
     {
         background(255);
+        //noStroke();
+        noFill();
         int k = loadbar(counter);
         counter++;
+
     }
 
     public int loadbar()
     {
+        img = loadImage("planetImageResize.jpg");
         
+
     }
 }
