@@ -31,7 +31,9 @@ public class BarLoad extends SpaceObject
     {
         if(inc<100)
         {
-            rect(50,450,inc,50);
+            ui.fill(0);
+            ui.rect(50,450,inc,50);
+            ui.stroke(200);
         }
     }
 }
