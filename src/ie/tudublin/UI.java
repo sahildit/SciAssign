@@ -37,7 +37,9 @@ public class UI extends PApplet
         rect(50,450,200,50);
         image(img,0,0);        
 
+        // ask bryan in class 
+        ui.textAlign(CENTER);
         text("PROJECT : SECRET DOJO",400,200);
-        stroke(0,255,255);
+        
     }
 }
