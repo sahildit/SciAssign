@@ -50,6 +50,7 @@ public class UI extends PApplet
         }
         if(inc>=200)
         {
+            fill(0);
             rect(50,450,200,50);
             return inc;
         }
