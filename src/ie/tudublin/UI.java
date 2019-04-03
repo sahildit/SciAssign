@@ -34,7 +34,10 @@ public class UI extends PApplet
 
         if(k>=200)
         {
-            
+            for(int i = items.size()-1; i>=0;i--)
+            {
+                SpaceObject j =items.get(i);
+            }
         }
 
     }
