@@ -48,6 +48,11 @@ public class UI extends PApplet
             rect(50,450,inc,50);
             stroke(200);
         }
+        if(inc>=200)
+        {
+            rect(50,450,200,50);
+            return inc;
+        }
         
         
     }
