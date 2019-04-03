@@ -6,11 +6,13 @@ public class Radar
 {
     PApplet ui;
     float r;
+    float iAngle;
 
-    public Radar(PApplet ui)
+    public Radar(PApplet ui, float r, float iAngle)
     {
         this.ui = ui;
         this.r = r;
+        this.iAngle = iAngle;
         
     }
 
