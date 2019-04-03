@@ -2,12 +2,10 @@ package ie.tudublin;
 
 import processing.core.PApplet;
 import java.util.ArrayList;
+
 import processing.core.PImage;
 
-
-
-public class UI extends PApplet
-{
+public class UI extends PApplet {
     int counter;
     PImage img;
     BarLoad loading;
@@ -15,19 +13,17 @@ public class UI extends PApplet
     Radar r;
     Sketch s;
     ArrayList<SpaceObject> items = new ArrayList<SpaceObject>();
-    
-    
-    public void settings()
-    {
-        size(1000,800);
+
+    public void settings() {
+        size(1000, 800);
     }
-    public void setup()
-    {
+
+    public void setup() {
         stars = new ComingStars(this);
         items.add(stars);
         loading = new BarLoad(this);
-        r = new Radar(this,0,1);
-        s = new Sketch(this);
+        r = new Radar(this, 0, 1);
+        s = new Sketch(this,0);
         
         
         
@@ -44,14 +40,19 @@ public class UI extends PApplet
         if(k>=200)
         {
             clearScreen();
+        
+        
             for(int i = items.size()-1; i>=0;i--)
                 {
                     SpaceObject j = items.get(i);
                     j.render();
+                    
             
                 }
-                stars.update();
+            stars.update();
         }
+        
+         
         
        
         
@@ -94,8 +95,13 @@ public class UI extends PApplet
     public void clearScreen()
     {
         background(0);
+        // here have to put the method so that it will work after the loading screen 
         r.render();
         r.rotateLine();
+        s.render();
+
     }
+
+    
 
 }
