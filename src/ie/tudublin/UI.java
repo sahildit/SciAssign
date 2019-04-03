@@ -38,8 +38,9 @@ public class UI extends PApplet
         image(img,0,0);        
 
         // ask bryan in class 
-        ui.textAlign(CENTER);
+        FONT font1 = new Font("SansSerif", Font.BOLD,20);
         text("PROJECT : SECRET DOJO",400,200);
+        stroke(0,255,255);
         
     }
 }
