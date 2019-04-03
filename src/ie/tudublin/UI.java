@@ -35,8 +35,7 @@ public class UI extends PApplet
     {
         img = loadImage("planetImageResize.jpg");
         rect(50,450,200,50);
-        noStroke();
-        
+        image(img,0,0);        
 
     }
 }
