@@ -15,10 +15,12 @@ public class ComingStars extends SpaceObject
     {
         float r = ui.random(0,1000);
         float w = ui.random(0,799);
+        ui.fill(0,3);
+        ui.rect(0,0,1000,799);
     }
 
     public void update()
     {
-        
+
     }
 }
