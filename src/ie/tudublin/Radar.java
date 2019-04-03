@@ -30,13 +30,14 @@ public class Radar
     public void rotateLine(){
 
         ui.pushMatrix();
-            ui.translate(100, 600);
+            ui.translate(100,600); //translates origin 0,0 to center of screen
             ui.rotate(ui.radians(r));
-
-            ui.line(0,0,0,100);
-
-
-        ui.popMatrix();
-        r+=2;
+            Object width;
+            //moving line
+            ui.line(0,0,0,100); // 100 is radius i.e half the diamter 
+            //ui.line(0,0,100*Math.cos(ui.radians(iAngle)),100*Math.sin(ui.radians(iAngle)));
+            ui.popMatrix();
+        // speed of rotating line 
+        r += 2;
     }
 }
