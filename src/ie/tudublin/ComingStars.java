@@ -20,9 +20,12 @@ public class ComingStars extends SpaceObject
         ui.ellipse(r,w,3,3);
         ui.noStroke();
         
+
+        
     }
     public void update()
     {
+        ui.line(200,200,700,600);
      
     }
 }
