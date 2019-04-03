@@ -40,7 +40,12 @@ public class BarLoad extends SpaceObject
         {
             ui.fill(0);
             ui.rect(50,450,200,50);
-            
+
         }
+
+    }
+    public void remove()
+    {
+        ui.background(0);
     }
 }
