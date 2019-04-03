@@ -37,6 +37,7 @@ public class UI extends PApplet
             for(int i = items.size()-1; i>=0;i--)
             {
                 SpaceObject j =items.get(i);
+                j.render();
             }
         }
 
