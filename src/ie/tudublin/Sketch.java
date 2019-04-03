@@ -15,6 +15,27 @@ public class Sketch
     }
     public void render()
     {
-        ui.line(0,700,1000,300);
+        ui.beginShape();
+        ui.fill(0);
+        ui.strokeWeight(4);
+        ui.vertex(ui.width,(ui.height/2)-40);
+        ui.vertex(ui.width,(ui.height/2)+90);
+        ui.vertex(ui.width-140,(ui.height/2)-40);
+        ui.vertex(ui.width-140, (ui.height/2)+90);
+        ui.vertex(ui.width-340,(ui.height/2)+240);
+        ui.vertex(ui.width,ui.height);
+        ui.endShape(ui.CLOSE);
+    
+        ui.createShape();
+        ui.beginShape();
+        ui.fill(0);
+        ui.stroke(200);
+        ui.strokeWeight(4);
+        ui.vertex(ui.width-340,ui.height);
+        ui.vertex(ui.width-340,(ui.height/2)+240);
+        ui.vertex(290,(ui.height/2)+240);
+        ui.vertex(290,ui.height);
+        ui.endShape(ui.CLOSE);
+
     }
 }
