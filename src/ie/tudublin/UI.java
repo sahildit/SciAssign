@@ -42,10 +42,13 @@ public class UI extends PApplet
         text("PROJECT : SECRET DOJO",400,200);
         stroke(0,255,255);
 
-        if(inc<100)
+        if(inc<200)
         {
-            rect(30,400,50,inc);
+            fill(0);
+            rect(50,450,inc,50);
+            stroke(200);
         }
+        
         
     }
 }
