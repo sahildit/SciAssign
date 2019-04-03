@@ -29,11 +29,18 @@ public class BarLoad extends SpaceObject
 
     public void update(int inc)
     {
-        if(inc<100)
+        if(inc<200)
         {
             ui.fill(0);
             ui.rect(50,450,inc,50);
             ui.stroke(200);
+        }
+        
+        if(inc>=200)
+        {
+            ui.fill(0);
+            ui.rect(50,450,200,50);
+            
         }
     }
 }
