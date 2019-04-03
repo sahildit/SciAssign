@@ -34,7 +34,7 @@ public class UI extends PApplet
     public int loadbar()
     {
         img = loadImage("planetImageResize.jpg");
-        rect(30,420,160,30);
+        rect(50,450,200,50);
         noStroke();
         
 
