@@ -10,4 +10,10 @@ public class Radar
     {
         this.ui = ui;
     }
+
+    public void render()
+    {
+        ui.ellipse(50,300,200,300);
+        ui.ellipse(50,600,150,159);
+    }
 }
