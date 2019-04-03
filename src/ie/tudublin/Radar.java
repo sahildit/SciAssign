@@ -18,7 +18,7 @@ public class Radar
     {
         float rwidth = ui.random(-50,50);
         float rheight = ui.random(0,50);
-        
+
         ui.ellipse(100,600,200,200);
         ui.ellipse(100,600,150,150);
         ui.ellipse(100,600,150,150);
@@ -32,6 +32,11 @@ public class Radar
         ui.pushMatrix();
             ui.translate(100, 600);
             ui.rotate(ui.radians(r));
+
+            ui.line(0,0,0,100);
+
+
         ui.popMatrix();
+        r+=2;
     }
 }
