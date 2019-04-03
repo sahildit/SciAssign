@@ -19,6 +19,7 @@ public class UI extends PApplet
     public void setup()
     {
         stars = new ComingStars(this);
+        items.add(stars);
         loading = new BarLoad(this);
         
     }
