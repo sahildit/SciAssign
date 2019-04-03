@@ -32,6 +32,7 @@ public class UI extends PApplet
         if(k>=200)
         {
             clearScreen();
+            for()
         }
 
     }

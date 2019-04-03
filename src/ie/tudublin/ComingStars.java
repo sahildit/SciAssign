@@ -10,4 +10,9 @@ public class ComingStars extends SpaceObject
     {
         this.ui = ui;
     }
+    
+    public void render()
+    {
+        
+    }
 }
