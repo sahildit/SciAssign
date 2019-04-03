@@ -6,8 +6,13 @@ public class Sketch
 {
     PApplet ui;
 
-    public  Sketch(PApplet ui)
+    public Sketch(PApplet ui)
     {
         this.ui = ui;
+    }
+
+    public void render()
+    {
+        
     }
 }

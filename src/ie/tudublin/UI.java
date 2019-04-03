@@ -13,6 +13,7 @@ public class UI extends PApplet
     BarLoad loading;
     ComingStars stars;
     Radar r;
+    Sketch s;
     ArrayList<SpaceObject> items = new ArrayList<SpaceObject>();
     
     
@@ -26,6 +27,7 @@ public class UI extends PApplet
         items.add(stars);
         loading = new BarLoad(this);
         r = new Radar(this,0,1);
+        s = new Sketch(this);
         
         
         
