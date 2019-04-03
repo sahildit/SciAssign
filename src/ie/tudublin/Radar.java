@@ -16,6 +16,9 @@ public class Radar
 
     public void render()
     {
+        float rwidth = ui.random(-50,50);
+        float rheight = ui.random(0,50);
+        
         ui.ellipse(100,600,200,200);
         ui.ellipse(100,600,150,150);
         ui.ellipse(100,600,150,150);
