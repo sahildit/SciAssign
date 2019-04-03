@@ -60,6 +60,6 @@ public class UI extends PApplet
     }
     public void clearScreen()
     {
-        noStroke();
+        background(0);
     }
 }
