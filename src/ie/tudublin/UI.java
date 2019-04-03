@@ -93,6 +93,7 @@ public class UI extends PApplet
     {
         background(0);
         r.render();
+        r.rotateLine();
     }
 
 }
