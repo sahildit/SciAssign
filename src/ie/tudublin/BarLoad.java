@@ -17,5 +17,9 @@ public class BarLoad extends SpaceObject
         img = ui.loadImage("planetImageResize.jpg");
         counter++;
 
+        ui.rect(30,420,160,30);
+        ui.fill(255);
+        
+
     }
 }
