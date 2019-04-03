@@ -25,6 +25,7 @@ public class UI extends PApplet
         stars = new ComingStars(this);
         items.add(stars);
         loading = new BarLoad(this);
+        r = new Radar(this);
         
         
         
@@ -47,6 +48,7 @@ public class UI extends PApplet
                     j.render();
             
                 }
+                stars.update();
         }
         
        
@@ -90,6 +92,7 @@ public class UI extends PApplet
     public void clearScreen()
     {
         background(0);
+        r.render();
     }
 
 }
