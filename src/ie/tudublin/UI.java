@@ -24,14 +24,14 @@ public class UI extends PApplet
     public void draw()
     {
         background(255);
-        //noStroke();
+        
         noFill();
         int k = loadbar(counter);
         counter++;
 
     }
 
-    public int loadbar()
+    public int loadbar(int inc)
     {
         img = loadImage("planetImageResize.jpg");
         rect(50,450,200,50);
@@ -41,6 +41,11 @@ public class UI extends PApplet
         
         text("PROJECT : SECRET DOJO",400,200);
         stroke(0,255,255);
+
+        if(inc<100)
+        {
+            rect(30,400,50,inc);
+        }
         
     }
 }
