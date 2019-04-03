@@ -19,7 +19,11 @@ public class BarLoad extends SpaceObject
 
         ui.rect(50,450,200,50);
         ui.image(img,0,0);
-        update(counter);
+        
+
+        ui.fill(255);
+        ui.text("PROJECT : SECRET DOJO",400,200);
+        ui.stroke(0,255,255);
         
         
 
