@@ -12,6 +12,7 @@ public class UI extends PApplet
     PImage img;
     BarLoad loading;
     ComingStars stars;
+    Radar r;
     ArrayList<SpaceObject> items = new ArrayList<SpaceObject>();
     
     

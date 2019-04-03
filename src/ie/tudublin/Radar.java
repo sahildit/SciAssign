@@ -9,6 +9,7 @@ public class Radar
     public Radar(PApplet ui)
     {
         this.ui = ui;
+        float r;
     }
 
     public void render()
