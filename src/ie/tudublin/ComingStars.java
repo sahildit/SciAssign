@@ -16,4 +16,9 @@ public class ComingStars extends SpaceObject
         float r = ui.random(0,1000);
         float w = ui.random(0,799);
     }
+
+    public void update()
+    {
+        
+    }
 }

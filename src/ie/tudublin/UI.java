@@ -9,6 +9,7 @@ public class UI extends PApplet
     int counter;
     PImage img;
     BarLoad loading;
+    ComingStars stars;
 
     public void settings()
     {
@@ -17,6 +18,7 @@ public class UI extends PApplet
 
     public void setup()
     {
+        stars = new ComingStars(this);
         loading = new BarLoad(this);
         
     }
@@ -32,7 +34,7 @@ public class UI extends PApplet
         if(k>=200)
         {
             clearScreen();
-            for()
+            
         }
 
     }
