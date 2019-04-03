@@ -29,6 +29,11 @@ public class UI extends PApplet
         int k = loadbar(counter);
         counter++;
 
+        if(k>=200)
+        {
+            clearScreen();
+        }
+
     }
 
     public int loadbar(int inc)
