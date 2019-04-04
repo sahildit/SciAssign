@@ -94,11 +94,12 @@ public class UI extends PApplet {
     
     public void clearScreen()
     {
-        background(0);
+        background(10);
+        s.render();
         // here have to put the method so that it will work after the loading screen 
         r.render();
         r.rotateLine();
-        s.render();
+        
 
     }
 
