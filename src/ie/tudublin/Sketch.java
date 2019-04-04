@@ -39,12 +39,13 @@ public class Sketch
     //     ui.endShape(ui.CLOSE);
 
             ui.beginShape();
-            ui.fill(255);
-            ui.strokeWeight(4);
-            ui.vertex(0,500);
-            ui.vertex(100,500);
-            ui.vertex(500,750);
-            ui.vertex(0,700);
+            ui.fill(199);
+            ui.strokeWeight(3);
+            ui.vertex(0, 500);
+            ui.vertex(1000,500);
+            ui.vertex(1000, 750);
+            ui.vertex(0, 750);
+            
             ui.endShape(ui.CLOSE);
         
     }
