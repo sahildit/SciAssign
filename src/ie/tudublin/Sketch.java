@@ -47,6 +47,15 @@ public class Sketch
             ui.vertex(0, 750);
             
             ui.endShape(ui.CLOSE);
+
+            ui.beginShape();
+            ui.strokeWeight(3);
+            ui.vertex(0,0);
+            ui.vertex(1000,0);
+            ui.vertex(900,70);
+            ui.vertex(100,70);
+            
+            ui.endShape(ui.CLOSE);
         
     }
 }
