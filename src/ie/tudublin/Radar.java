@@ -49,7 +49,7 @@ public class Radar
             //ui.line(0,0,100*Math.cos(ui.radians(iAngle)),100*Math.sin(ui.radians(iAngle)));
             ui.popMatrix();
         // speed of rotating line 
-        r += 2;
+        r += 7;
 
     }
 

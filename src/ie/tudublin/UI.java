@@ -3,6 +3,7 @@ package ie.tudublin;
 import processing.core.PApplet;
 import java.util.ArrayList;
 
+
 import processing.core.PImage;
 
 public class UI extends PApplet {
@@ -12,7 +13,27 @@ public class UI extends PApplet {
     ComingStars stars;
     Radar r;
     Sketch s;
+    Wave w;
     ArrayList<SpaceObject> items = new ArrayList<SpaceObject>();
+    boolean[] keys = new boolean[1024];
+
+    public void KeyPressed()
+    { 
+        keys[keyCode] = true;
+    }
+
+    public void KeyReleased()
+    {
+        keys[keyCode] = true;
+    }
+
+    public boolean CheckKey(int c)
+    {
+        return keys[c] || keys [Character.toUpperCase(c)];
+    }
+
+
+
 
     public void settings() {
         size(1000, 800);
@@ -24,6 +45,7 @@ public class UI extends PApplet {
         loading = new BarLoad(this);
         r = new Radar(this, 0, 1);
         s = new Sketch(this,0);
+        w = new Wave(this,0,10,0,0.0f,70.0f,450.0f,0,0);
         
         
         
@@ -32,28 +54,30 @@ public class UI extends PApplet {
     {
         
         
-        background(255);
-        noFill();
-        int k = loadbar(counter);
-        counter++;
-        
-        if(k>=200)
-        {
-            clearScreen();
-        
-        
-            for(int i = items.size()-1; i>=0;i--)
-                {
-                    SpaceObject j = items.get(i);
-                    j.render();
+               
+                    background(255);
+                    noFill();
+                    int k = loadbar(counter);
+                    counter++;
                     
+                    if(k>=200)
+                    {
+                        clearScreen();
+                    
+                    
+                        for(int i = items.size()-1; i>=0;i--)
+                            {
+                                SpaceObject j = items.get(i);
+                                j.render();
+                                
+                        
+                            }
+                        stars.update();
+                    }
             
-                }
-            stars.update();
-        }
-        
-         
-        
+                
+                
+                
        
         
         
@@ -70,9 +94,11 @@ public class UI extends PApplet {
     
 
     fill(255);
-    //ui.textAlign(CENTER);
+   
     //FONT font1 = new Font("SansSerif", Font.BOLD,20);
-    text("PROJECT : SECRET DOJO",400,200);
+    textSize(25);
+    textAlign(CENTER);
+    text("PROJECT : AVENGERS ENDER GAME",400,200);
     stroke(0,255,255);
    
    
@@ -96,7 +122,8 @@ public class UI extends PApplet {
     {
         background(10);
         s.render();
-        // here have to put the method so that it will work after the loading screen 
+        w.render();
+        // // here have to put the method so that it will work after the loading screen 
         r.render();
         r.rotateLine();
         

@@ -24,7 +24,7 @@ public class BarLoad extends SpaceObject
     ui.fill(255);
     //ui.textAlign(CENTER);
     //FONT font1 = new Font("SansSerif", Font.BOLD,20);
-    ui.text("PROJECT : SECRET DOJO",400,200);
+    ui.text("PROJECT : AVENGERS ENDER GAME",400,200);
     ui.stroke(0,255,255);
    }
    public void update(int inc)
