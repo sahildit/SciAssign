@@ -5,34 +5,25 @@ import processing.core.PApplet;
 public class Wave 
 {
     PApplet ui;
-    float w;
-    int space = 10; // space between waves
-    int width; // of wave
-    float theta = 0.0f;
-    float height = 70.0f; // height of wave
-    float pixels = 450.0f; // period when wave repeats
-    float dx; // used for incrementng
-    float[] yVal; // store height
+    private float w;
+    float[] PlanetsMass = {3,6,4,5,8,1,5,2};
+    String[] Planets = {"Mercury","Mars","Venus","Earth","Uranus","Neptune","Saturn","Jupiter"};
+    float[] fa = new float[2];
+    int[] colors = new int[Planets.length];
 
-    public Wave(PApplet ui, float w, int space, int width, float theta, float height, float pixels,float dx,
-            float[] i)
+
+    public Wave(PApplet ui,float w)
     {
         this.ui = ui;
         this.w = w;
-        this.space = space;
-        this.width = width;
-        this.theta = theta;
-        this.height = height;
-        this.pixels = pixels;
-        this.dx = dx;
-        this.yVal = i;
-        
-        
     }
-
-	public Wave(UI ui2, int w2, int space2, int width2, float theta2, float height2, float pixels2, int dx2, int i) {
-	}
-
+    
+    // place where wave gonna be
+    public void WaveSketch()
+    {
+        ui.noStroke();
+        ui.rect(650, 510, 1000, 700);
+    }
 	public void render()
     {
 

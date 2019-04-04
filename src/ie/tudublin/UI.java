@@ -41,12 +41,11 @@ public class UI extends PApplet {
 
     public void setup() {
         stars = new ComingStars(this);
-        items.add(stars);
+        items.add(stars); 
         loading = new BarLoad(this);
         r = new Radar(this, 0, 1);
         s = new Sketch(this,0);
-        w = new Wave(this,0,10,0,0.0f,70.0f,450.0f,0,0);
-        
+        w = new Wave(this,0);
         
         
     }
