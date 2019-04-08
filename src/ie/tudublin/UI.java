@@ -3,6 +3,8 @@ package ie.tudublin;
 import processing.core.PApplet;
 import java.util.ArrayList;
 
+import processing.data.Table;
+import processing.data.TableRow;
 
 import processing.core.PImage;
 
@@ -14,6 +16,8 @@ public class UI extends PApplet {
     Radar r;
     Sketch s;
     Wave w;
+    int mode = 0;
+    LdTable l;
     ArrayList<SpaceObject> items = new ArrayList<SpaceObject>();
     boolean[] keys = new boolean[1024];
 
@@ -46,18 +50,37 @@ public class UI extends PApplet {
         r = new Radar(this, 0, 1);
         s = new Sketch(this,0);
         w = new Wave(this,0);
-        
+        LdTable ldTable = new LdTable(this);
         
     }
+
+    public void mousePressed()
+    {
+        if((mouseX > 150 && mouseX < 300) && (mouseY > 10 && mouseY < 40))
+        {
+            mode = 1;
+        } else if((mouseX > 420 && mouseX < 570) && (mouseY > 10 && mouseY < 40))
+        {
+            mode = 0;
+        }
+        else if((mouseX > 700 && mouseX < 850) && (mouseY > 10 && mouseY < 40))
+        {
+            System.exit(0);
+        }
+    }
+
+
     public void draw()
     {
-        
-        
+    
                
                     background(255);
+                    stroke(255);
+                    line(200, 200, mouseX, mouseY);
+                    println(mouseX, mouseY);
                     noFill();
                     int k = loadbar(counter);
-                    counter++;
+                    counter += 5;
                     
                     if(k>=200)
                     {
@@ -73,13 +96,7 @@ public class UI extends PApplet {
                             }
                         stars.update();
                     }
-            
-                
-                
-                
-       
-        
-        
+   
     }
    
     public int loadbar(int inc)
@@ -119,12 +136,34 @@ public class UI extends PApplet {
     
     public void clearScreen()
     {
-        background(10);
-        s.render();
-        w.render();
-        // // here have to put the method so that it will work after the loading screen 
-        r.render();
-        r.rotateLine();
+        if(mode == 0)
+        {
+
+            background(10);
+            
+            //l.render();
+            //w.drawLineGraph();
+            s.render();
+            s.show();
+        
+            // // here have to put the method so that it will work after the loading screen 
+            // r.render();
+            // r.rotateLine();
+        } else if(mode == 1)
+        {
+            background(10);
+            
+            //l.render();
+            //w.drawLineGraph();
+            s.render();
+            s.show();
+        
+            // // here have to put the method so that it will work after the loading screen 
+            r.render();
+            r.rotateLine();
+        }
+       
+      
         
 
     }

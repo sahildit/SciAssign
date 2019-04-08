@@ -24,6 +24,7 @@ public class Radar
         
         // for changing the color of radar lines
         ui.stroke(100,200,0);
+        ui.fill(0);
         ui.ellipse(100,600,200,200);
         ui.ellipse(100,600,150,150);
         ui.ellipse(100,600,100,100);

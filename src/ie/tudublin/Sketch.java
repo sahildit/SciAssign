@@ -90,6 +90,27 @@ public class Sketch
             ui.vertex(1000, 480);
             ui.endShape(ui.CLOSE);
 
-        
+            
     }
+
+        public void show(){
+            ui.fill(0);
+            ui.rect(400,550,200,125);
+            ui.rect(700,550,200,125);
+
+            // top buttons
+            //ui.pushMatrix();
+            ui.rect(150,10,150,30); //x,y,width,height
+            ui.rect(700,10,150,30);
+            ui.rect(420, 10, 150, 30);
+            ui.fill(255);
+            ui.stroke(255);
+            ui.textAlign(PApplet.CENTER,PApplet.CENTER);
+            ui.text("LAUNCH",225,23);
+            ui.text("ShutDown",490,23);
+            ui.text("EXIT",770,23);
+            ui.fill(0);
+            
+            //ui.popMatrix();
+        }
 }
