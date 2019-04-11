@@ -30,33 +30,18 @@ public class Wave
         // ui.rect(600,610,155,130);
     }
 
-    void drawLineGraph()
+    void render()
     {
-        float x = ui.random(PlanetsMass.length);
-        float gap = ui.width * 0.1f;
-        ui.stroke(0);
-       // ui.line(gap, gap, gap, ui.height - gap);
-        //ui.line(gap, ui.height - gap, ui.width - gap, ui.height - gap);
-        ui.rect(600,600,800,600);
-
-
-
-        for(int i = 1 ; i < PlanetsMass.length ; i ++)
-        {
-            float x1 = ui.map(i - 1, 0, x - 1, gap, ui.width - gap); 
-            float y1 = ui.map(PlanetsMass[i - 1], 0, 150, ui.height - gap, gap);
-            float x2 = ui.map(i, 0, x - 1, gap, ui.width - gap); 
-            float y2 = ui.map(PlanetsMass[i], 0, 150, ui.height - gap, gap);
-            ui.line(x1, y1, x2, y2);            
-        }
+        ui.fill(255);
+        ui.rect(409,580,50,90);
+        ui.rect(450,550,50,120);
     }
 
    
     public void draw()
     {
-        ui.background(0);
-
-        drawLineGraph();
+        
+       
 
     }
 

@@ -2,7 +2,6 @@ package ie.tudublin;
 
 import processing.core.PApplet;
 import java.util.ArrayList;
-
 import processing.data.Table;
 import processing.data.TableRow;
 
@@ -19,6 +18,8 @@ public class UI extends PApplet {
     int mode = 0;
     LdTable l;
     ArrayList<SpaceObject> items = new ArrayList<SpaceObject>();
+    ArrayList<LdTable> ldTables = new ArrayList<LdTable>();
+
     boolean[] keys = new boolean[1024];
 
     public void KeyPressed()
@@ -50,7 +51,7 @@ public class UI extends PApplet {
         r = new Radar(this, 0, 1);
         s = new Sketch(this,0);
         w = new Wave(this,0);
-        LdTable ldTable = new LdTable(this);
+        l = new LdTable(this,"f","g");
         
     }
 
@@ -141,10 +142,11 @@ public class UI extends PApplet {
 
             background(10);
             
-            //l.render();
-            //w.drawLineGraph();
+            l.render();
+            
             s.render();
             s.show();
+           
         
             // // here have to put the method so that it will work after the loading screen 
             // r.render();
@@ -153,14 +155,13 @@ public class UI extends PApplet {
         {
             background(10);
             
-            //l.render();
-            //w.drawLineGraph();
+           
             s.render();
             s.show();
         
-            // // here have to put the method so that it will work after the loading screen 
             r.render();
             r.rotateLine();
+            w.render();
         }
        
       
