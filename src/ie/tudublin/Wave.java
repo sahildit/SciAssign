@@ -2,6 +2,8 @@ package ie.tudublin;
 
 import java.awt.Stroke;
 import java.util.Random;
+import processing.data.*;
+
 
 import processing.core.PApplet;
 
@@ -22,6 +24,21 @@ public class Wave
 	}
 
 	
+
+   public Wave(TableRow row) {
+	}
+
+
+
+void loadTable()
+   {
+        Object table = loadTable("Planets.csv", "header");
+       
+   }
+
+    private Object loadTable(String string, String string2) {
+        return null;
+    }
 
     public void waverect()
     {

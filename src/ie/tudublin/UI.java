@@ -19,6 +19,9 @@ public class UI extends PApplet {
     LdTable l;
     ArrayList<SpaceObject> items = new ArrayList<SpaceObject>();
     ArrayList<LdTable> ldTables = new ArrayList<LdTable>();
+    ArrayList<Wave> waves= new ArrayList<Wave>();
+
+    Rects bar1, bar2, bar3;
 
     boolean[] keys = new boolean[1024];
 
@@ -52,8 +55,30 @@ public class UI extends PApplet {
         s = new Sketch(this,0);
         w = new Wave(this,0);
         l = new LdTable(this,"f","g");
-        
+        bar1 = new Rects(0, 255, 0, 400, 580, 40, random(30, 100), this);
+        // can't load data for my histogram
+        //loadWaves();
+        //printWaves();
     }
+
+    public void loadWaves()
+	{
+		Table table = loadTable("Planets.csv", "header");
+        for(TableRow row : table.rows())
+        {
+            Wave wa = new Wave(row);
+            waves.add(w);
+        }
+
+    }
+    
+    public void printWaves()
+	{
+		for(int i = 0; i < waves.size(); i++)
+		{
+            System.out.println(waves.get(i));
+		}
+	}
 
     public void mousePressed()
     {
@@ -97,6 +122,7 @@ public class UI extends PApplet {
                             }
                         stars.update();
                     }
+                    // bar1.drawRects();
    
     }
    
