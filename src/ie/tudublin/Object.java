@@ -36,11 +36,23 @@ public class Object
     }
     public void draw()
     {
+        // for left object 
         ui.pushMatrix();
-        ui.translate(ui.width / 2,ui.height /2);
+        ui.translate(40,350);
         ui.rotate(ui.frameCount/200);
-        drawObject(0,0,80,100,50);
+        drawObject(0,0,20,30,50);
         ui.popMatrix();
+
+
+        // for right object
+        ui.pushMatrix();
+        ui.translate(960,350);
+        ui.rotate(ui.frameCount/200);
+        drawObject(0,0,20,30,50);
+        ui.popMatrix();
+
+
+
 
     }
 
