@@ -17,6 +17,7 @@ public class UI extends PApplet {
     Wave w;
     int mode = 0;
     LdTable l;
+    Object o;
     ArrayList<SpaceObject> items = new ArrayList<SpaceObject>();
     ArrayList<LdTable> ldTables = new ArrayList<LdTable>();
     ArrayList<Wave> waves= new ArrayList<Wave>();
@@ -55,12 +56,14 @@ public class UI extends PApplet {
         s = new Sketch(this,0);
         w = new Wave(this,0);
         l = new LdTable(this,"f","g");
+        o = new Object(this);
         bar1 = new Rects(0, 255, 0, 400, 580, 40, random(30, 100), this);
         // can't load data for my histogram
         //loadWaves();
         //printWaves();
     }
 
+    // using for Waves( making histogram but can't)
     public void loadWaves()
 	{
 		Table table = loadTable("Planets.csv", "header");
@@ -72,6 +75,7 @@ public class UI extends PApplet {
 
     }
     
+    // using for Waves( making histogram but can't)
     public void printWaves()
 	{
 		for(int i = 0; i < waves.size(); i++)
@@ -187,14 +191,11 @@ public class UI extends PApplet {
         
             r.render();
             r.rotateLine();
-            w.render();
+            w.draw();
+            o.draw();
+
         }
-       
       
-        
-
     }
-
-    
 
 }

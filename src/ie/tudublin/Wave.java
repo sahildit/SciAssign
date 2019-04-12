@@ -57,7 +57,7 @@ void loadTable()
    
     public void draw()
     {
-        
+        render();
        
 
     }
