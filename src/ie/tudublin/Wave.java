@@ -50,8 +50,13 @@ void loadTable()
     void render()
     {
         ui.fill(255);
-        ui.rect(409,580,50,90);
-        ui.rect(450,550,50,120);
+        ui.rect(409,585,30,90);
+        ui.rect(450,615,30,60);
+        ui.rect(491,655,30,20);
+        ui.rect(534,555,30,120);
+
+
+
     }
 
    

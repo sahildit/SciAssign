@@ -42,12 +42,11 @@ public class BarLoad extends SpaceObject
         
     }
 
-    
+
    }
     public void remove()
     {
         ui.background(0);
     } 
    
- 
 }

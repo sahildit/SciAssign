@@ -100,6 +100,7 @@ public class Sketch
 
             // top buttons
             //ui.pushMatrix();
+            // them rect are used for top buttons
             ui.rect(150,10,150,30); //x,y,width,height
             ui.rect(700,10,150,30);
             ui.rect(420, 10, 150, 30);
