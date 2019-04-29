@@ -95,21 +95,24 @@ public class Sketch
 
         public void show(){
             ui.fill(0);
+            // them are for two boxes at the bottom
             ui.rect(400,550,200,125);
-            ui.rect(700,550,200,125);
-
+            ui.rect(645,550,310,125);
+ 
             // top buttons
             //ui.pushMatrix();
             // them rect are used for top buttons
             ui.rect(150,10,150,30); //x,y,width,height
             ui.rect(700,10,150,30);
-            ui.rect(420, 10, 150, 30);
-            ui.fill(255);
+            ui.rect(420, 10, 150, 30); 
+            ui.fill(255);   
             ui.stroke(255);
             ui.textAlign(PApplet.CENTER,PApplet.CENTER);
             ui.text("LAUNCH",225,23);
             ui.text("ShutDown",490,23);
             ui.text("EXIT",770,23);
+            ui.text("Welcome Bryan!", 800, 588);
+            ui.text("Fight well for Final Battle", 800, 620);
             ui.fill(0);
             
             //ui.popMatrix();

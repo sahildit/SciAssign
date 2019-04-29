@@ -10,7 +10,7 @@ public class Object
     public Object(PApplet ui)
     {
         this.ui = ui;
-    }
+    } 
 
     public void drawObject(float x,float y,float r1,float r2,float n)
     {

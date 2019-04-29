@@ -110,7 +110,7 @@ public class UI extends PApplet {
                     println(mouseX, mouseY);
                     noFill();
                     int k = loadbar(counter);
-                    counter += 5;
+                    counter += 2;
                     
                     if(k>=200)
                     {
