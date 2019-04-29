@@ -6,8 +6,13 @@ import processing.data.Table;
 import processing.data.TableRow;
 
 import processing.core.PImage;
+import ddf.minim.*;
+
 
 public class UI extends PApplet {
+    Minim minim;
+    // scifi is the name of the music
+    AudioPlayer rocket2;
     int counter;
     PImage img;
     BarLoad loading;
@@ -61,6 +66,8 @@ public class UI extends PApplet {
         // can't load data for my histogram
         //loadWaves();
         //printWaves();
+        minim = new Minim(this);
+        rocket2 = minim.loadFile("rocket2.wav");
     }
 
     // using for Waves( making histogram but can't)
@@ -75,7 +82,7 @@ public class UI extends PApplet {
 
     }
     
-    // using for Waves( making histogram but can't)
+    
     public void printWaves()
 	{
 		for(int i = 0; i < waves.size(); i++)
@@ -103,7 +110,9 @@ public class UI extends PApplet {
     public void draw()
     {
     
-               
+                    rocket2.play();
+                    //alien.rewind();
+
                     background(255);
                     stroke(255);
                     line(200, 200, mouseX, mouseY);
@@ -127,8 +136,10 @@ public class UI extends PApplet {
                         stars.update();
                     }
                     // bar1.drawRects();
+                   
    
     }
+    
    
     public int loadbar(int inc)
     {
