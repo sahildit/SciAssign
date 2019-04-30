@@ -317,5 +317,37 @@ ui.endShape(ui.CLOSE);
 ``` 
 ![An image](data/object.PNG)
 
+# Transforms
+
+*  I use this for my Object which is on both sides of main screen
+
+* pushMatrix - It will save current position of object
+
+* popMatrix -  It will restore prior position.
+
+* translate - will basically move origin point.
+
+```
+ public void draw()
+    {
+        // for left object 
+        ui.pushMatrix();
+        ui.translate(40,350);
+        ui.rotate(ui.frameCount/200);
+        drawObject(0,0,20,30,50);
+        ui.popMatrix();
+
+
+        // for right object
+        ui.pushMatrix();
+        ui.translate(960,350);
+        ui.rotate(ui.frameCount/200);
+        drawObject(0,0,20,30,50);
+        ui.popMatrix();
+
+    }
+
+```
+
 
 
