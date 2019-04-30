@@ -171,7 +171,7 @@ Here is the exmaple from code
 
  # Variables and Loop
 
-Here i have used if / else statements to iterate over counter 
+Here i have used if / else statements so that one rectangle can iterate over another using counter. 
 
 ```
      public void render()
@@ -489,6 +489,7 @@ public class BarLoad extends SpaceObject
    }
 
 ```
+* Interior Control Panel for Space Ship
 
 ![An image](data/5.PNG)
 
