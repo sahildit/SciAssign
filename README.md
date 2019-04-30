@@ -213,6 +213,8 @@ Here i have used if / else statements so that one rectangle can iterate over ano
 
 # What I am most proud of in the Assignment
 
+What am i proud of is i completed this website on time and did the same thing which i consider to do at the starting. At starting i was just thinking how i am gonna do it but by doing small bits everyday it makes easy for me. I faced few difficulties during the entire time span but i learnt how to overcome them and 
+
 # Markdown Tutorial
 
 ## Interactive ( Buttons)
