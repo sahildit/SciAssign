@@ -215,5 +215,12 @@ There are 3 buttons
             ui.text("EXIT",770,23);
 
 ```
+## Interactive ( Mouse)
+
+* Here, i made mouseX and mouseY which will tell the co-ordinates and it just for fun basically, doesn't use any hard coding.
+
+![An image](data/middle.PNG)
+
+
 
 
