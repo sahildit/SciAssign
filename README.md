@@ -202,7 +202,7 @@ There are 3 buttons
     }
 
 ```
-Them both are in different classes and also i want to mention that i couldn't do that using math function so have to hard code. 
+# Them both are in different classes and also i want to mention that i couldn't do that using math function so have to hard code. 
 ```
   ui.rect(150,10,150,30); //x,y,width,height
             ui.rect(700,10,150,30);
