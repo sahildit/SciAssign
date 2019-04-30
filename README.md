@@ -386,7 +386,7 @@ public class ComingStars extends SpaceObject
 
 *  This class displays only essential information and hide the details.
 
-* That's my abstraction class.
+* That's my abstraction class  and it has two sub-class.
 
 ```
 public abstract class SpaceObject 
@@ -406,6 +406,37 @@ public abstract class SpaceObject
     {
         
     }
+}
+
+```
+
+# Inheritance 
+
+* In this class, the idea behind this is that you create a new classes that are built upon existing class( i.e parent object which is UI class and all other objects aquires all the properties from there).
+
+```
+
+public class BarLoad extends SpaceObject
+{
+    //UI ui;
+    int counter;
+    private PImage img;
+
+     public void render()
+   {
+    img = ui.loadImage("planetImageResize.jpg");
+    counter++;
+    
+    ui.rect(50,450,200,50);
+    ui.image(img,0,0);
+    update(counter);
+
+    ui.fill(255);
+    //ui.textAlign(CENTER);
+    //FONT font1 = new Font("SansSerif", Font.BOLD,20);
+    ui.text("PROJECT : AVENGERS ENDER GAME",400,200);
+    ui.stroke(0,255,255);
+   }
 }
 
 ```
