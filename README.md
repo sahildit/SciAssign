@@ -111,8 +111,60 @@ public void draw()
  loading sound files and load table from csv file
 
  used KeyPressed() and checkkey() functions
- 
+
  loops, methods
+
+ ```
+
+ ```
+  public void mousePressed()
+    {
+        if((mouseX > 150 && mouseX < 300) && (mouseY > 10 && mouseY < 40))
+        {
+            mode = 1;
+        } else if((mouseX > 420 && mouseX < 570) && (mouseY > 10 && mouseY < 40))
+        {
+            mode = 0;
+        }
+        else if((mouseX > 700 && mouseX < 850) && (mouseY > 10 && mouseY < 40))
+        {
+            System.exit(0);
+        }
+    }
+
+
+    public void draw()
+    {
+    
+                    rocket2.play();
+                    //alien.rewind();
+
+                    background(255);
+                    stroke(255);
+                    line(200, 200, mouseX, mouseY);
+                    println(mouseX, mouseY);
+                    noFill();
+                    int k = loadbar(counter);
+                    counter += 2;
+                    
+                    if(k>=200)
+                    {
+                        clearScreen();
+                    
+                    
+                        for(int i = items.size()-1; i>=0;i--)
+                            {
+                                SpaceObject j = items.get(i);
+                                j.render();
+                                
+                        
+                            }
+                        stars.update();
+                    }
+                    // bar1.drawRects();
+                   
+   
+    }
 
  ```
 
