@@ -47,11 +47,60 @@ In Total i created 11 classes for my program to work which are:
         float w = ui.random(70,500);
 
 ```
-* BarLoad - firstly, this class is responsible for making loading bar, which iterates an counter on rectangle and also it is sub-class of SpaceObject. Secondly, it has a background image which gives it massive impression.
+* BarLoad - Firstly, this class is responsible for making loading bar, which iterates an counter on rectangle and also it is sub-class of SpaceObject. Secondly, it has a background image which gives it massive impression.
 
-* Object - This class is used to make two ( on left and right ) moving objects. For making them i used the math function and transform functions .
+* Object - This class is used to make two ( on left and right ) moving objects. For making them i used the math function and transform functions . Here is the example of push and popo matrix :
+
+```
+public void draw()
+    {
+        // for left object 
+        ui.pushMatrix();
+        ui.translate(40,350);
+        ui.rotate(ui.frameCount/200);
+        drawObject(0,0,20,30,50);
+        ui.popMatrix();
 
 
+        // for right object
+        ui.pushMatrix();
+        ui.translate(960,350);
+        ui.rotate(ui.frameCount/200);
+        drawObject(0,0,20,30,50);
+        ui.popMatrix();
+
+    }
+
+```
+* Radar - This class make an Radar, in which i used maths function and also made an cool thing in the middle of radar.
+
+* Rects - I was using this class before, so now it doesn't do anything suspicious.
+
+* Sketch - This class is basically used for making the interior sketch of space ship using different functions.
+
+```
+  // left part 
+            ui.beginShape();
+            ui.strokeWeight(3);
+            ui.vertex(0, 20);
+            ui.vertex(10,90);
+            ui.vertex(100, 380);
+            ui.vertex(0,480);
+            ui.endShape(ui.CLOSE);
+
+
+            // right part
+            ui.beginShape();
+            ui.strokeWeight(3);
+            ui.vertex(1000, 20);
+            ui.vertex(990, 90);
+            ui.vertex(900, 380);
+            ui.vertex(1000, 480);
+            ui.endShape(ui.CLOSE);
+
+```
+
+* UI - 
 # What I am most proud of in the Assignment
 
 # Markdown Tutorial
