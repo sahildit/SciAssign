@@ -173,3 +173,13 @@ Here is the exmaple from code
 
 # Markdown Tutorial
 
+# Interactive ( Buttons)
+
+There are 3 buttons 
+
+* Launch = Start various features like start radar,histogram,etc.
+
+* Shutdown = This button will turn off many functions as discussed above.
+
+* Exit =  Close the program.
+
