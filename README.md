@@ -143,7 +143,7 @@ Here is the exmaple from code
                     background(255);
                     stroke(255);
                     line(200, 200, mouseX, mouseY);
-                    println(mouseX, mouseY);
+                    //println(mouseX, mouseY);
                     noFill();
                     int k = loadbar(counter);
                     counter += 2;
@@ -220,6 +220,29 @@ There are 3 buttons
 * Here, i made mouseX and mouseY which will tell the co-ordinates and it just for fun basically, doesn't use any hard coding.
 
 ![An image](data/middle.PNG)
+
+```
+ public void render()
+    {
+        float r = ui.random(0,1000);
+        float w = ui.random(70,500);
+        // it will increase the speed of star occuring on screen
+        ui.noStroke();
+        ui.fill(0,0);
+        ui.rect(0,0,1000,799);
+        ui.fill(255);
+        ui.ellipse(r,w,7,7);
+        ui.ellipse(r,w,7,7);
+        ui.ellipse(r,w,7,7);
+        ui.ellipse(r,w,7,7);
+        ui.ellipse(r,w,7,7);
+        ui.noStroke();
+        
+
+        
+    }
+
+```
 
 
 
