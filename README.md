@@ -47,7 +47,9 @@ In Total i created 11 classes for my program to work which are:
         float w = ui.random(70,500);
 
 ```
+* BarLoad - firstly, this class is responsible for making loading bar, which iterates an counter on rectangle and also it is sub-class of SpaceObject. Secondly, it has a background image which gives it massive impression.
 
+* Object - This class is used to make two ( on left and right ) moving objects. For making them i used the math function and transform functions .
 
 
 # What I am most proud of in the Assignment
