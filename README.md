@@ -183,7 +183,7 @@ There are 3 buttons
 
 * Exit =  Close the program.
 
-![An image](image/buttons.PNG)
+![An image](data/buttons.PNG)
 
 ```
  public void mousePressed()
