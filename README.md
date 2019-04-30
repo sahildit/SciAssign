@@ -115,6 +115,7 @@ public void draw()
  loops, methods
 
  ```
+Here is the exmaple from code
 
  ```
   public void mousePressed()
