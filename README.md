@@ -16,10 +16,41 @@ This assignment is about to create the user interface for sci-fi idea which can 
 # Instructions 
 
 The User must compile and run the program, the screen ( first screen) will be displayed which has background image of space and an loading bar. 
-When loading bar gonna finish it will prompt the user to new screen and that's my main screen. The main screen contains Three buttons. First, an Launch button which will launch the features of ship, Second, Shutdown button will make features stop working and Third, Exit button will close the file and brings user to git again if he/she wants to start all over again. One important thing is that user can't exit the program untill unless he/he launch the program.
+When loading bar gonna finish it will prompt the user to new screen and that's my main screen. The main screen contains Three buttons. First, an Launch button which will launch the features of ship, Second, Shutdown button will make features stop working and Third, Exit button will close the program and brings user to git again if he/she wants to start all over again.
 
 ### 3 Buttons on Top from Left to right which are :
 
 * Launch button
 * ShutDown button
 * Exit button
+
+# How it works
+
+In Total i created 11 classes for my program to work which are:
+
+* LdTable - Loads table from csv file. 
+
+* Main - It is used to execute the UI class.
+
+* SpaceObject - It is an Abstract class
+
+* ComingStars - this class is used for displaying random stars on the screen.
+
+```
+ public  ComingStars(UI ui)
+    {
+        this.ui = ui;
+    }
+    public void render()
+    {
+        float r = ui.random(0,1000);
+        float w = ui.random(70,500);
+
+```
+
+
+
+# What I am most proud of in the Assignment
+
+# Markdown Tutorial
+
