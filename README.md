@@ -377,9 +377,36 @@ public class ComingStars extends SpaceObject
         ui.ellipse(r,w,7,7);
         ui.noStroke();
         
+  
+    }
 
+```
+
+# Abstract Class 
+
+*  This class displays only essential information and hide the details.
+
+* That's my abstraction class.
+
+```
+public abstract class SpaceObject 
+{
+    PApplet ui;
+
+    public SpaceObject(UI ui)
+    {
+        this.ui = ui;
+    }
+
+    public void render()
+    {
+
+    }
+    public void update()
+    {
         
     }
+}
 
 ```
 
