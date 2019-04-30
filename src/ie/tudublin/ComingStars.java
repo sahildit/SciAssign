@@ -3,11 +3,11 @@ package ie.tudublin;
 import processing.core.PApplet;
 public class ComingStars extends SpaceObject
 {
-    UI ui;
+    //UI ui;
     
     public  ComingStars(UI ui)
     {
-        this.ui = ui;
+        super(ui);
     }
     public void render()
     {

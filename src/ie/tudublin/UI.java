@@ -116,7 +116,8 @@ public class UI extends PApplet {
                     background(255);
                     stroke(255);
                     line(200, 200, mouseX, mouseY);
-                    println(mouseX, mouseY);
+                    //println(mouseX, mouseY);
+                    //text(mouseX, 800, 588);
                     noFill();
                     int k = loadbar(counter);
                     counter += 2;

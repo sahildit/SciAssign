@@ -4,7 +4,7 @@ import processing.core.PApplet;
 
 import processing.data.*;
 
-public class Object
+public class Object extends UI
 {
     PApplet ui;
     public Object(PApplet ui)

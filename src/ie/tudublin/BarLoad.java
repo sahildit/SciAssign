@@ -1,15 +1,17 @@
 package ie.tudublin;
 
 import processing.core.PImage;
+import processing.core.PApplet;
+
 public class BarLoad extends SpaceObject
 {
-    UI ui;
+    //UI ui;
     int counter;
     private PImage img;
     
    public BarLoad(UI ui)
    {
-       this.ui = ui ;
+       super(ui);
 
    }
    public void render()

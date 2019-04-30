@@ -111,8 +111,11 @@ public class Sketch
             ui.text("LAUNCH",225,23);
             ui.text("ShutDown",490,23);
             ui.text("EXIT",770,23);
-            ui.text("Welcome Bryan!", 800, 588);
-            ui.text("Fight well for Final Battle", 800, 620);
+           // ui.text("Welcome Bryan!", 800, 588);
+           ui.text(ui.mouseX, 800, 588);
+
+            ui.text(ui.mouseY, 800, 620);
+            //ui.text("Fight well for Final Battle", 800, 620);
             ui.fill(0);
             
             //ui.popMatrix();
