@@ -100,7 +100,22 @@ public void draw()
 
 ```
 
-* UI - 
+* UI - This class contains lots of stuff so i am gonna tell u about few common things which includes :
+```
+.:
+
+ variables and inialize them
+
+ declare Arrays and Arraylists
+
+ loading sound files and load table from csv file
+
+ used KeyPressed() and checkkey() functions
+ 
+ loops, methods
+
+ ```
+
 # What I am most proud of in the Assignment
 
 # Markdown Tutorial
