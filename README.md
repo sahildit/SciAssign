@@ -173,7 +173,7 @@ Here is the exmaple from code
 
 # Markdown Tutorial
 
-#### Interactive ( Buttons)
+## Interactive ( Buttons)
 
 There are 3 buttons 
 
@@ -184,5 +184,36 @@ There are 3 buttons
 * Exit =  Close the program.
 
 ![An image](image/buttons.PNG)
+
+```
+ public void mousePressed()
+    {
+        if((mouseX > 150 && mouseX < 300) && (mouseY > 10 && mouseY < 40))
+        {
+            mode = 1;
+        } else if((mouseX > 420 && mouseX < 570) && (mouseY > 10 && mouseY < 40))
+        {
+            mode = 0;
+        }
+        else if((mouseX > 700 && mouseX < 850) && (mouseY > 10 && mouseY < 40))
+        {
+            System.exit(0);
+        }
+    }
+
+```
+Them both are in different classes and also i want to mention that i couldn't do that using math function so have to hard code. 
+```
+  ui.rect(150,10,150,30); //x,y,width,height
+            ui.rect(700,10,150,30);
+            ui.rect(420, 10, 150, 30); 
+            ui.fill(255);   
+            ui.stroke(255);
+            ui.textAlign(PApplet.CENTER,PApplet.CENTER);
+            ui.text("LAUNCH",225,23);
+            ui.text("ShutDown",490,23);
+            ui.text("EXIT",770,23);
+
+```
 
 
