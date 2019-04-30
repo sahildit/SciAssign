@@ -236,6 +236,8 @@ There are 3 buttons
 
 * This class will generate random stars and it is sub-class of SpaceObject
 
+* As we looking at the image and we can only see one star that is because they are going really fast so can't capture them all of them.
+
 ![An image](data/6.PNG)
 
 ```
@@ -258,7 +260,37 @@ There are 3 buttons
 
 ```
 
+## CSV File 
 
+* The csv file which i used is Planets.csv and that contains the name of planets and random numbers.
+
+* The place where i used that is UI.java
+
+* But there was a problem here, i can print it to git console but not in UI program. so, i have make manually hitogram at the bottom of interface.
+
+```
+  
+    public void loadWaves()
+	{
+		Table table = loadTable("Planets.csv", "header");
+        for(TableRow row : table.rows())
+        {
+            Wave wa = new Wave(row);
+            waves.add(w);
+        }
+
+    }
+    
+    
+    public void printWaves()
+	{
+		for(int i = 0; i < waves.size(); i++)
+		{
+            System.out.println(waves.get(i));
+		}
+	}
+
+```
 
 
 
