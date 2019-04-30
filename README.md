@@ -169,6 +169,49 @@ Here is the exmaple from code
 
  ```
 
+ # Variables and Loop
+
+Here i have used if / else statements to iterate over counter 
+
+```
+     public void render()
+   {
+    img = ui.loadImage("planetImageResize.jpg");
+    counter++;
+    
+    ui.rect(50,450,200,50);
+    ui.image(img,0,0);
+    update(counter);
+
+    ui.fill(255);
+    //ui.textAlign(CENTER);
+    //FONT font1 = new Font("SansSerif", Font.BOLD,20);
+    ui.text("PROJECT : AVENGERS ENDER GAME",400,200);
+    ui.stroke(0,255,255);
+   }
+   public void update(int inc)
+   {
+        if(inc<200)
+    {  
+        ui.fill(0);
+        ui.rect(50,450,inc,50);
+        ui.stroke(200);
+    }
+    if(inc>=200)
+    {
+        ui.fill(0);
+        ui.rect(50,450,200,50);
+        
+    }
+
+```
+
+* Here is the output how it looks on screen
+
+![An image](data/start.PNG)
+
+
+
 # What I am most proud of in the Assignment
 
 # Markdown Tutorial
@@ -327,6 +370,8 @@ ui.endShape(ui.CLOSE);
 
 * translate - will basically move origin point.
 
+* rotate
+
 ```
  public void draw()
     {
@@ -421,8 +466,13 @@ public class BarLoad extends SpaceObject
     //UI ui;
     int counter;
     private PImage img;
+    
+   public BarLoad(UI ui)
+   {
+       super(ui);
 
-     public void render()
+   }
+   public void render()
    {
     img = ui.loadImage("planetImageResize.jpg");
     counter++;
@@ -437,7 +487,6 @@ public class BarLoad extends SpaceObject
     ui.text("PROJECT : AVENGERS ENDER GAME",400,200);
     ui.stroke(0,255,255);
    }
-}
 
 ```
 
