@@ -173,7 +173,7 @@ Here is the exmaple from code
 
 # Markdown Tutorial
 
-# Interactive ( Buttons)
+#### Interactive ( Buttons)
 
 There are 3 buttons 
 
@@ -182,4 +182,7 @@ There are 3 buttons
 * Shutdown = This button will turn off many functions as discussed above.
 
 * Exit =  Close the program.
+
+![An image](images/buttons.png)
+
 
