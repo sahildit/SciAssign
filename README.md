@@ -236,7 +236,7 @@ There are 3 buttons
 
 * This class will generate random stars and it is sub-class of SpaceObject
 
-![An image](data/5.PNG)
+![An image](data/6.PNG)
 
 ```
  public void render()
