@@ -183,6 +183,6 @@ There are 3 buttons
 
 * Exit =  Close the program.
 
-![An image](buttons.png)
+![An image](image/buttons.PNG)
 
 
