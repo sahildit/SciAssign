@@ -222,6 +222,23 @@ There are 3 buttons
 ![An image](data/middle.PNG)
 
 ```
+  ui.textSize(15);
+            ui.fill(0);
+            ui.text(ui.mouseX, 475,480);
+
+            ui.text(ui.mouseY, 515, 475);
+           
+            ui.fill(0);
+
+```
+
+## Interactive ( Stars)
+
+* This class will generate random stars and it is sub-class of SpaceObject
+
+![An image](data/5.PNG)
+
+```
  public void render()
     {
         float r = ui.random(0,1000);
@@ -236,13 +253,12 @@ There are 3 buttons
         ui.ellipse(r,w,7,7);
         ui.ellipse(r,w,7,7);
         ui.ellipse(r,w,7,7);
-        ui.noStroke();
-        
-
-        
+        ui.noStroke();  
     }
 
 ```
+
+
 
 
 

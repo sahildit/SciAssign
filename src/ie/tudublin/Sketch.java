@@ -119,8 +119,9 @@ public class Sketch
             ui.text(ui.mouseX, 475,480);
 
             ui.text(ui.mouseY, 515, 475);
-            //ui.text("Fight well for Final Battle", 800, 620);
+           
             ui.fill(0);
+             //ui.text("Fight well for Final Battle", 800, 620);
             
             //ui.popMatrix();
         }
