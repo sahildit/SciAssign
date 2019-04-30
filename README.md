@@ -266,7 +266,7 @@ There are 3 buttons
 
 * The place where i used that is UI.java
 
-* But there was a problem here, i can print it to git console but not in UI program. so, i have make manually hitogram at the bottom of interface.
+* But there was a problem here, i can print it to git console but not in UI program. so, i have make my histogram manually at the bottom of interface.
 
 ```
   
@@ -292,6 +292,30 @@ There are 3 buttons
 
 ```
 
+# The unit circle and trigonometry 
+
+* I used maths functions and all in making moving object on both left and right sides.
+
+* Below is the code which i used 
+
+```
+ ui.beginShape();
+
+        for(float i = 0; i< ui.TWO_PI; i += angle)
+        {
+            float sx  = x + ui.cos(i) * r2;
+            float sy = y + ui.sin(i) * r1;
+            ui.vertex(sx,sy);
+
+            sx = x + ui.cos(i + halfAngle) * r1;
+            sy = y + ui.sin(i + halfAngle) * r2;
+
+            ui.vertex(sx,sy);
+        }
+ui.endShape(ui.CLOSE);
+
+``` 
+![An image](data/object.PNG)
 
 
 
