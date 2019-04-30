@@ -48,7 +48,7 @@ In Total i created 11 classes for my program to work which are:
 ```
 * BarLoad - Firstly, this class is responsible for making loading bar, which iterates an counter on rectangle and also it is sub-class of SpaceObject. Secondly, it has a background image which gives it massive impression.
 
-* Object - This class is used to make two ( on left and right ) moving objects. For making them i used the math function and transform functions . Here is the example of push and popo matrix :
+* Object - This class is used to make two ( on left and right ) moving objects. For making them i used the math function and transform functions . Here is the example of push and pop matrix :
 
 ```
 public void draw()
@@ -103,7 +103,7 @@ public void draw()
 ```
 .:
 
- variables and inialize them
+ variables and inialized them
 
  declare Arrays and Arraylists
 
@@ -425,6 +425,13 @@ public class ComingStars extends SpaceObject
         
   
     }
+
+```
+* loop with the arraylist rending each object
+
+```
+    ArrayList<SpaceObject> items = new ArrayList<SpaceObject>();
+
 
 ```
 
