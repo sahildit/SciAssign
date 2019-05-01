@@ -502,9 +502,5 @@ public class BarLoad extends SpaceObject
 ![An image](data/5.PNG)
 
 
-* Youtube Link: [![YouTube](http://img.youtube.com/vi/rXdIkOKtHzI&feature=youtu.be/0.jpg)](https://www.youtube.com/watch?v=rXdIkOKtHzI&feature=youtu.be)
-
-
-
-
+*  Here is the Youtube Video Link: [![YouTube](http://img.youtube.com/vi/rXdIkOKtHzI&feature=youtu.be/0.jpg)](https://www.youtube.com/watch?v=rXdIkOKtHzI&feature=youtu.be)
 
