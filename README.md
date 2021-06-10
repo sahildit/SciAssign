@@ -25,7 +25,7 @@ When loading bar gonna finish it will prompt the user to new screen and that's m
 
 # How it works
 
-In Total i created 11 classes for my program to work which are:
+In Total i created 11 classes for my program to work which are:-
 
 * LdTable - Loads table from csv file. 
 
