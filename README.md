@@ -31,7 +31,7 @@ In Total i created 11 classes for my program to work which are:-
 
 * Main - It is used to execute the UI class.
 
-* SpaceObject - It is an Abstract class
+* SpaceObject - It is an Abstract class.
 
 * ComingStars - this class is used for displaying random stars on the screen.
 
